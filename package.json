@@ -10,7 +10,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel src -d build",
     "build:clean": "rm -rf build",
-    "postbuild:clean": "npm run build"
+    "postbuild:clean": "npm run build",
+    "lint": "npx standard \"src/*.js\"",
+    "lint:fix": "npx standard \"src/*.js\" --fix"
   },
   "repository": {
     "type": "git",
