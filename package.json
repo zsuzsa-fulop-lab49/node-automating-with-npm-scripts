@@ -7,7 +7,14 @@
     "node": ">=8"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha",
+    "test:module2": "mocha test/module2.test.js",
+    "test:module3": "mocha test/module3.test.js",
+    "build": "babel src -d build",
+    "build:clean": "rm -rf build",
+    "postbuild:clean": "npm run build",
+    "lint": "npx standard \"src/*.js\"",
+    "lint:fix": "npx standard \"src/*.js\" --fix"
   },
   "repository": {
     "type": "git",
