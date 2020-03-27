@@ -7,7 +7,18 @@
     "node": ">=8"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha",
+    "test:module2": "mocha test/module2.test.js",
+    "test:module3": "mocha test/module3.test.js",
+    "test:module4": "mocha test/module4.test.js",
+    "build": "babel src -d build",
+    "build:clean": "rm -rf build",
+    "postbuild:clean": "npm run build",
+    "lint": "npx standard \"src/*.js\"",
+    "lint:fix": "npx standard \"src/*.js\" --fix",
+    "prestart:dev": "npm run lint:fix",
+    "start:dev": "nodemon --watch src --exec PORT=5000 npm start",
+    "start": "npm run build && node build/index.js"
   },
   "repository": {
     "type": "git",
