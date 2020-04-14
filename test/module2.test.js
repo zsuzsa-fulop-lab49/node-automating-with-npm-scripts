@@ -18,7 +18,7 @@ describe("create scripts for the build process", function() {
   it("@add-build:clean-script", function() {
     assert.ok(
       scripts["build:clean"],
-      "The `scripts` object doesn't have a key named `build\\:clean`."
+      "The `scripts` object doesn't have a key named build-clean build:clean."
     );
 
     assert.equal(
