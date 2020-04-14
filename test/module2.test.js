@@ -15,29 +15,29 @@ describe("create scripts for the build process", function () {
     );
   });
 
-  it("@add-build:clean-script", function () {
+  it("@add-build-clean-script", function () {
     assert.ok(
-      scripts["build:clean"],
-      "The `scripts` object doesn't have a key named 'build:clean'."
+      scripts["build-clean"],
+      "The `scripts` object doesn't have a key named `build-clean`."
     );
 
     assert.equal(
-      scripts["build:clean"],
+      scripts["build-clean"],
       "rm -rf build",
-      "The value for the key 'build:clean' is not set to `rm -rf build`."
+      "The value for the key `build-clean` is not set to `rm -rf build`."
     );
   });
 
-  it("@add-post-hook-for-build:clean-script", function () {
+  it("@add-post-hook-for-build-clean-script", function () {
     assert.ok(
-      scripts["postbuild:clean"],
-      "The `scripts` object doesn't have a key named 'postbuild:clean'."
+      scripts["postbuild-clean"],
+      "The `scripts` object doesn't have a key named `postbuild-clean`."
     );
 
     assert.equal(
-      scripts["postbuild:clean"],
+      scripts["postbuild-clean"],
       "npm run build",
-      "The value for the key 'postbuild:clean' is not set to `npm run build`."
+      "The value for the key `postbuild-clean` is not set to `npm run build`."
     );
   });
 });
