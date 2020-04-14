@@ -16,7 +16,7 @@
     "postbuild-clean": "npm run build",
     "lint": "npx standard \"src/*.js\"",
     "lint-fix": "npx standard \"src/*.js\" --fix",
-    "prestart-dev": "npm run lint:fix",
+    "prestart-dev": "npm run lint-fix",
     "start-dev": "nodemon --watch src --exec PORT=5000 npm start",
     "start": "npm run build && node build/index.js"
   },
