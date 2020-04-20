@@ -7,7 +7,10 @@
     "node": ">=8"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "test:module2": "mocha test/module2.test.js",
+    "test:module3": "mocha test/module3.test.js",
+    "test:module4": "mocha test/module4.test.js"
   },
   "repository": {
     "type": "git",
