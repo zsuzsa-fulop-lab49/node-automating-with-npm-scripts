@@ -1,4 +1,4 @@
-const scripts = require("../package.json").scripts;
+const scripts = require("../package.test.json").scripts;
 const assert = require("assert");
 
 describe("create scripts to find and fix lint errors", function () {

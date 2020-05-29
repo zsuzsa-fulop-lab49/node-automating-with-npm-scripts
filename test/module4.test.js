@@ -1,4 +1,4 @@
-const scripts = require("../package.json").scripts;
+const scripts = require("../package.test.json").scripts;
 const assert = require("assert");
 
 describe("create scripts to run the application", function () {

@@ -1,0 +1,36 @@
+{
+  "name": "node-automating-with-npm-scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=8"
+  },
+  "scripts": {
+    "test": "mocha",
+    "test:module2": "mocha test/module2.test.js",
+    "test:module3": "mocha test/module3.test.js",
+    "test:module4": "mocha test/module4.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pmbanugo/node-automating-with-npm-scripts.git"
+  },
+  "keywords": [],
+  "author": "Peter Mbanugo <p_mbanugo @Twitter>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pmbanugo/node-automating-with-npm-scripts/issues"
+  },
+  "homepage": "https://github.com/pmbanugo/node-automating-with-npm-scripts#readme",
+  "dependencies": {
+    "fastify": "2.12.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.8.4",
+    "@babel/core": "7.8.7",
+    "@babel/preset-env": "7.8.7",
+    "mocha": "7.1.1",
+    "nodemon": "2.0.2"
+  }
+}
